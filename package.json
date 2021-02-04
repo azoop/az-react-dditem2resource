@@ -1,7 +1,7 @@
 {
   "name": "az-react-dditem2resource",
   "version": "0.1.0",
-  "description": "library: drag and drop item to resource",
+  "description": "azoop, drag and drop item to resource",
   "author": "w-toguchi83",
   "license": "MIT",
   "repository": "",
@@ -20,6 +20,7 @@
     "test:lint": "eslint --ext js --ext jsx --ext ts --ext tsx src/**",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
+    "demo:up": "yarn test:build && cd example && yarn install && yarn start",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
